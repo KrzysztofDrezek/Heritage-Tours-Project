@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 Heritage Tours is a full-stack web application designed to manage and book guided tours.  
-Users can browse tours, check availability, and make bookings through a simple and user-friendly interface.
+Users can browse tours, check availability, and make bookings through a intuitive and user-friendly interface.
 
 ## 🚀 Features
 - Browse available tours
