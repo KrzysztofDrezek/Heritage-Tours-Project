@@ -13,9 +13,17 @@ const authRoutes = require("./routes/authRoutes");
 const app = express();
 const PORT = 3000;
 
-// app.use(helmet({
-//     crossOriginResourcePolicy: false
-// }));
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            imgSrc: ["'self'", "data:", "https:", "http:"], // Allow images from any HTTP/HTTPS source
+            scriptSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'"],
+        },
+    },
+    crossOriginResourcePolicy: false
+}));
 
 app.use(cors({
     origin: true,
